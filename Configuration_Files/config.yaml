@@ -1,0 +1,18 @@
+# configs/config.yaml
+
+data:
+  train_dir: '/home/ec/Downloads/New Plant Diseases Dataset(Augmented)/train/'
+  valid_dir: '/home/ec/Downloads/New Plant Diseases Dataset(Augmented)/valid/'
+
+model:
+  architecture: 'squeezenet1_1'
+  pretrained: False
+  num_classes: 10
+  save_path: '/home/ec/Downloads/squeezenet1_1_plant_disease.pth'
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 30
+
+device: 'cuda'  # or 'cpu'
