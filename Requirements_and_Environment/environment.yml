@@ -1,0 +1,12 @@
+# environment.yml
+
+name: plant_env
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - -r requirements.txt
